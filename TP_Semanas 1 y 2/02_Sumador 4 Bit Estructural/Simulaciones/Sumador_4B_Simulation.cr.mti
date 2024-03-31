@@ -1,0 +1,25 @@
+{C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Sumador_1B
+-- Compiling architecture Sumador_1B_Architecture of Sumador_1B
+
+} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/02_Sumador 4 Bit Estructural/Fuentes/Sumador-4B.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/02_Sumador 4 Bit Estructural/Fuentes/Sumador-4B.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Sumador_4B
+-- Compiling architecture Sumador_4B_Architecture of Sumador_4B
+
+} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/02_Sumador 4 Bit Estructural/Fuentes/Sumador-4B_TB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/02_Sumador 4 Bit Estructural/Fuentes/Sumador-4B_TB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Sumador_4B_TB
+-- Compiling architecture Sumador_4B_TB_Architecture of Sumador_4B_TB
+
+} {} {}}

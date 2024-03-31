@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Esumador_1b
+Z0 w1711847035
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Simulaciones
+Z4 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B.vhd
+Z5 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B.vhd
+l0
+L4
+VX<eaP5bQ_la9o77=:U0De3
+!s100 8kI4DL1k?E;9Gd2J1X:k30
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1711847054
+!i10b 1
+Z8 !s108 1711847054.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B.vhd|
+Z10 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Asumador_1b_architecture
+R1
+R2
+Z13 DEx4 work 10 sumador_1b 0 22 X<eaP5bQ_la9o77=:U0De3
+l18
+L15
+Z14 V;6h3<JG3SY8<3[=L_EiJF2
+Z15 !s100 9b2DCBbaYn@L7;<Jc[d>`3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esumador_1b_tb
+Z16 w1711846986
+R1
+R2
+R3
+Z17 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B_TB.vhd
+Z18 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B_TB.vhd
+l0
+L4
+V:gdSWTGbj7EPU_mTAKLOo3
+!s100 3KPii9TT<HE9z6Ka1MmTg3
+R6
+32
+Z19 !s110 1711847002
+!i10b 1
+Z20 !s108 1711847002.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B_TB.vhd|
+Z22 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/01_Sumador 1 Bit/Fuentes/Sumador-1B_TB.vhd|
+!i113 1
+R11
+R12
+Asumador_1b_tb_architecture
+R1
+R2
+DEx4 work 13 sumador_1b_tb 0 22 :gdSWTGbj7EPU_mTAKLOo3
+l28
+L8
+V`1zQeBlNj5?1;6BfdAgo10
+!s100 <RSNUYzDPa?=1lQ`o32KM3
+R6
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R11
+R12
