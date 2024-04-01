@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Emux_2x1
+Z0 w1711924224
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Simulaciones
+Z4 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1.vhd
+Z5 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1.vhd
+l0
+L6
+VFE7h0[D?a;YzfDPUO>>?J3
+!s100 oIW@nKz1kW<a`Bb`A9A=a1
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1711924377
+!i10b 1
+Z8 !s108 1711924377.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1.vhd|
+Z10 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Amux_2x1_architecture
+R1
+R2
+DEx4 work 7 mux_2x1 0 22 FE7h0[D?a;YzfDPUO>>?J3
+l19
+L16
+V5]C3WYMhTcLoECBS]Vd8@3
+!s100 [?:28kglXGOCb1g>G1=@L0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emux_2x1_tb
+Z13 w1711924367
+R1
+R2
+R3
+Z14 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1_TB.vhd
+Z15 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1_TB.vhd
+l0
+L6
+V2]HGQJQ`VLjDb[?KOeci03
+!s100 Tm5OdkWCSo8d@a:KR1A>72
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1_TB.vhd|
+Z17 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/04_Multiplexor 2X1/Fuentes/Multiplexor-2X1_TB.vhd|
+!i113 1
+R11
+R12
+Amux_2x1_architecture
+R1
+R2
+Z18 DEx4 work 10 mux_2x1_tb 0 22 2]HGQJQ`VLjDb[?KOeci03
+l28
+L10
+VG6:@ZaP<LR]jDAE4HALUc0
+!s100 joEE1TDzTH:mZm1JcB15`2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

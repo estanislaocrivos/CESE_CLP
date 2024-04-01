@@ -1,0 +1,205 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/02_Sumador 4 Bit Estructural/Simulaciones
+Erestador_1b
+Z0 w1711915280
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Simulaciones
+Z4 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B.vhd
+Z5 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B.vhd
+l0
+L6
+Vi4F`F7V7l`YIOB6[Im?9A1
+!s100 >=E^?lkS]I=4BdOB=kPWG2
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1711917897
+!i10b 1
+Z8 !s108 1711917897.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B.vhd|
+Z10 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Arestador_1b_architecture
+R1
+R2
+DEx4 work 11 restador_1b 0 22 i4F`F7V7l`YIOB6[Im?9A1
+l22
+L19
+V=zd<A@=Z]ak][U6lB>cX`3
+!s100 oA^WkNoDJm4>0gol`69RA2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Erestador_1b_tb
+Z13 w1711914751
+R1
+R2
+R3
+Z14 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B_TB.vhd
+Z15 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B_TB.vhd
+l0
+L4
+V75CJkAAR[KRQgCR3[ET:01
+!s100 4PU<Fanb@cFJ3Xe_ZePbY0
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B_TB.vhd|
+Z17 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Restador-1B_TB.vhd|
+!i113 1
+R11
+R12
+Arestador_1b_tb_architecture
+R1
+R2
+DEx4 work 14 restador_1b_tb 0 22 75CJkAAR[KRQgCR3[ET:01
+l28
+L8
+VB7NH@cTO15l_9kbE6jeGo0
+!s100 TIaFaFe?PUlA8U2i;lHUj0
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Esumador_1b
+Z18 w1711913687
+R1
+R2
+R3
+Z19 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-1B.vhd
+Z20 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-1B.vhd
+l0
+L6
+V_@BcXOUdkE;Kgmz]eYo]f1
+!s100 k^=6EUEV^KDez>S2XW2NE2
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-1B.vhd|
+Z22 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-1B.vhd|
+!i113 1
+R11
+R12
+Asumador_1b_architecture
+R1
+R2
+DEx4 work 10 sumador_1b 0 22 _@BcXOUdkE;Kgmz]eYo]f1
+l20
+L17
+VE5KfVR`PF7RSoM>BCIc6m2
+!s100 9H6o<f4UgokG]T=gaEz:H0
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Esumador_4b
+Z23 w1711917511
+R1
+R2
+R3
+Z24 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B.vhd
+Z25 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B.vhd
+l0
+L4
+VgRkGKkU?:W?R=;Z5@7fR53
+!s100 J1;QoU>mLHcOe338OGTBQ1
+R6
+32
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B.vhd|
+Z27 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B.vhd|
+!i113 1
+R11
+R12
+Asumador_4b_architecture
+R1
+R2
+DEx4 work 10 sumador_4b 0 22 gRkGKkU?:W?R=;Z5@7fR53
+l33
+L16
+VVkkD83E7IPU@A_>ShcXV:3
+!s100 :imm5Re<T<ATFkIY0jXBQ3
+R6
+32
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Esumador_4b_tb
+Z28 w1711917891
+R1
+R2
+R3
+Z29 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B_TB.vhd
+Z30 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B_TB.vhd
+l0
+L4
+V8X0D44mImQ:CFWAO4=o=n1
+!s100 N_R:V0KdXXE^gV4gU9YiO3
+R6
+32
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B_TB.vhd|
+Z32 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/03_Sumador Restador 4 Bit Estructural/Fuentes/Sumador-4B_TB.vhd|
+!i113 1
+R11
+R12
+Asumador_4b_tb_architecture
+R1
+R2
+Z33 DEx4 work 13 sumador_4b_tb 0 22 8X0D44mImQ:CFWAO4=o=n1
+l30
+L8
+V1TLCf<hS5?Yl1c6S>ij;K0
+!s100 ]m9IGGJk[ghOFLAjjh>3g0
+R6
+32
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
