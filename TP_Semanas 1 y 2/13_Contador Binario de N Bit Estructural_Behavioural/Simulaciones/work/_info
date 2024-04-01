@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Econtador_nb
+Z0 w1712002097
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Simulaciones
+Z5 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural.vhd
+Z6 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural.vhd
+l0
+L7
+VCf6mHH8icKYl7GilG2<B]2
+!s100 N8zeIm_h3^_hzT8?ifI5n0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1712003001
+!i10b 1
+Z9 !s108 1712003001.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural.vhd|
+Z11 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Acontador_nb_architecture
+R1
+R2
+R3
+DEx4 work 11 contador_nb 0 22 Cf6mHH8icKYl7GilG2<B]2
+l27
+L23
+VjkhaUCDzT8]<_HXIbE>g80
+!s100 Yo1CzU56=1<NceKG2F1>_0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtador_nb_tb
+Z14 w1712002994
+R1
+R2
+R3
+R4
+Z15 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural_TB.vhd
+Z16 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural_TB.vhd
+l0
+L5
+V2@B7za>@g4F88W0M8nFDZ3
+!s100 nS=zf?CV[aWdbS6nj98SE0
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural_TB.vhd|
+Z18 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural_TB.vhd|
+!i113 1
+R12
+R13
+Acontador_nb_tb_architecture
+R1
+R2
+R3
+Z19 DEx4 work 14 contador_nb_tb 0 22 2@B7za>@g4F88W0M8nFDZ3
+l33
+L9
+V4OD=af7Tcb;@QY``[F0021
+!s100 02QOPm983gl;_if6odaVI1
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13

@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Simulaciones
+Ebarrel_shifter_nb
+Z0 w1711995026
+Z1 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Simulaciones
+Z6 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB.vhd
+Z7 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB.vhd
+l0
+L8
+VoL^L8c^Bz91Ub;RgWdPog3
+!s100 D^BYT8MmnoALDe<=1WXXc1
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1711995912
+!i10b 1
+Z10 !s108 1711995912.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB.vhd|
+Z12 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abarrel_shifter_nb_architecture
+R1
+R2
+R3
+R4
+DEx4 work 17 barrel_shifter_nb 0 22 oL^L8c^Bz91Ub;RgWdPog3
+l26
+L23
+VBn9gC45_j3mH@No3VToGP0
+!s100 I8TgEmW_m24I^J?<Rg`le0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ebarrel_shifter_nb_tb
+Z15 w1711995903
+R1
+R2
+R3
+R4
+R5
+Z16 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB_TB.vhd
+Z17 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB_TB.vhd
+l0
+L8
+V<WobUZM@7WoVZ[3iBI>OZ3
+!s100 ;4DkSH0IfP>SkM95MILa`3
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB_TB.vhd|
+Z19 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB_TB.vhd|
+!i113 1
+R13
+R14
+Abarrel_shifter_nb_tb_architecture
+R1
+R2
+R3
+R4
+Z20 DEx4 work 20 barrel_shifter_nb_tb 0 22 <WobUZM@7WoVZ[3iBI>OZ3
+l35
+L12
+Vh8`?gM<cb5ndNV2PgiTZO3
+!s100 PZVMJBlL8hEV9<hUH?MJ?3
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14

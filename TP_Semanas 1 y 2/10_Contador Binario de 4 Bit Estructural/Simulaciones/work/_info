@@ -1,0 +1,131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Econtador_4b
+Z0 w1712001283
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Simulaciones
+Z5 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B.vhd
+Z6 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B.vhd
+l0
+L7
+V7KJOalGdeAgi9lWoiVN4Y3
+!s100 SjIc4DL?;P949nLdkl1mE1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1712001424
+!i10b 1
+Z9 !s108 1712001424.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B.vhd|
+Z11 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Acontador_4b_architecture
+R1
+R2
+R3
+DEx4 work 11 contador_4b 0 22 7KJOalGdeAgi9lWoiVN4Y3
+l35
+L17
+V[_I@]50i1fI_oiEfHcO3O0
+!s100 0gU@2]2cnQ]zVZKHX=`Q:1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtador_4b_tb
+Z14 w1712001415
+R1
+R2
+R3
+R4
+Z15 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B_TB.vhd
+Z16 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B_TB.vhd
+l0
+L7
+V8mll0hlNXJbbVY7<j@eIo3
+!s100 KH7c^YLD]ILORO[WDGa0l3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B_TB.vhd|
+Z18 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/10_Contador Binario de 4 Bit Estructural/Fuentes/Contador-4B_TB.vhd|
+!i113 1
+R12
+R13
+Acontador_4b_tb_architecture
+R1
+R2
+R3
+DEx4 work 14 contador_4b_tb 0 22 8mll0hlNXJbbVY7<j@eIo3
+l29
+L11
+V5^Q?MF=Yjn]7OPn>LLXz23
+!s100 l<20PRWM40QT4Sc3_j<6Q2
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eflip_flop_d
+Z19 w1711978618
+R2
+R3
+R4
+Z20 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd
+Z21 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd
+l0
+L6
+VHOjOi>EoPlhgAWn[E39S80
+!s100 ;67;5E<jPz_DDeXF;>hj=2
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd|
+Z23 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd|
+!i113 1
+R12
+R13
+Aflip_flop_d_architecture
+R2
+R3
+Z24 DEx4 work 11 flip_flop_d 0 22 HOjOi>EoPlhgAWn[E39S80
+l20
+L17
+Z25 VPVK=Qf^LcOf23hiWZJj6n3
+Z26 !s100 KBm=AakY_z1O_2i85n_jU1
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13

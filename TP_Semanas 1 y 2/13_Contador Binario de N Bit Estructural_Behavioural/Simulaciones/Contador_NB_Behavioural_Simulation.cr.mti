@@ -1,0 +1,19 @@
+{C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural_TB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural_TB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Contador_NB_TB
+-- Compiling architecture Contador_NB_TB_Architecture of Contador_NB_TB
+
+} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Fuentes/Contador-NB-Behavioural.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Contador_NB
+-- Compiling architecture Contador_NB_Architecture of Contador_NB
+
+} {} {}}

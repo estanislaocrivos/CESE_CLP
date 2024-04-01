@@ -1,0 +1,21 @@
+{C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Barrel_Shifter_NB
+-- Compiling architecture Barrel_Shifter_NB_Architecture of Barrel_Shifter_NB
+
+} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB_TB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/08_Barrel Shifter N Bits/Fuentes/Barrel-Shifter-NB_TB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Barrel_Shifter_NB_TB
+-- Compiling architecture Barrel_Shifter_NB_TB_Architecture of Barrel_Shifter_NB_TB
+
+} {} {}}

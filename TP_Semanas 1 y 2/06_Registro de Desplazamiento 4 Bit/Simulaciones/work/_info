@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Simulaciones
+Eflip_flop_d
+Z0 w1711978618
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Simulaciones
+Z4 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd
+Z5 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd
+l0
+L6
+VHOjOi>EoPlhgAWn[E39S80
+!s100 ;67;5E<jPz_DDeXF;>hj=2
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1711979761
+!i10b 1
+Z8 !s108 1711979761.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd|
+Z10 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/05_Flip Flop D/Fuentes/Flip-Flop-D.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aflip_flop_d_architecture
+R1
+R2
+Z13 DEx4 work 11 flip_flop_d 0 22 HOjOi>EoPlhgAWn[E39S80
+l20
+L17
+Z14 VPVK=Qf^LcOf23hiWZJj6n3
+Z15 !s100 KBm=AakY_z1O_2i85n_jU1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eshift_register_4b
+Z16 w1711979622
+R1
+R2
+R3
+Z17 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B.vhd
+Z18 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B.vhd
+l0
+L6
+VYiaFVcBnUfP:YQW0oT1c30
+!s100 GbeQ`o_cLDEiNeemzI9k61
+R6
+32
+R7
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B.vhd|
+Z20 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B.vhd|
+!i113 1
+R11
+R12
+Ashift_register_4b_architecture
+R1
+R2
+DEx4 work 17 shift_register_4b 0 22 YiaFVcBnUfP:YQW0oT1c30
+l31
+L15
+V`>z>@VS95?z6AK_AICd9d1
+!s100 4V``VBYk2M]J?zocE<n^o0
+R6
+32
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R11
+R12
+Eshift_register_4b_tb
+Z21 w1711979755
+R1
+R2
+R3
+Z22 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B_TB.vhd
+Z23 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B_TB.vhd
+l0
+L6
+VDSF0lQhLmbS`6jVa`_D0z3
+!s100 loO;PLXeW5>JEeNTc>9d10
+R6
+32
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B_TB.vhd|
+Z25 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/06_Registro de Desplazamiento 4 Bit/Fuentes/Shift-Register-4B_TB.vhd|
+!i113 1
+R11
+R12
+Ashift_register_4b_tb_architecture
+R1
+R2
+DEx4 work 20 shift_register_4b_tb 0 22 DSF0lQhLmbS`6jVa`_D0z3
+l26
+L10
+VBPfY8kVXX]=RE3b2:NXoT0
+!s100 egngWT[gRM?CgAf]YCVdc3
+R6
+32
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R11
+R12
