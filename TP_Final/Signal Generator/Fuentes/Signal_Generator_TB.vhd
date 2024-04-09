@@ -3,7 +3,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 library std;
-use std.env.finish;
+-- use std.env.stop;
  
 --entity for testbenches are always empty
 entity Signal_Generator_TB is

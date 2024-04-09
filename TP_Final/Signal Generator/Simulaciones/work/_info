@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Semanas 1 y 2/13_Contador Binario de N Bit Estructural_Behavioural/Simulaciones
+Esignal_generator
+Z0 w1712703227
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Simulaciones
+Z5 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator.vhd
+Z6 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator.vhd
+l0
+L6
+VflnFe?Jcd9RL^I6L?]Ah`1
+!s100 G7Zz<V^6j=SXiRK9]n^NF1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1712704712
+!i10b 1
+Z9 !s108 1712704712.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator.vhd|
+Z11 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 16 signal_generator 0 22 flnFe?Jcd9RL^I6L?]Ah`1
+l26
+L15
+Vi6eWni2SOFi<HZP=aZ1j11
+!s100 FTKRoUMWbM`[`d6;9WNa61
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Esignal_generator_tb
+Z14 w1712704131
+R1
+R2
+R3
+R4
+Z15 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator_TB.vhd
+Z16 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator_TB.vhd
+l0
+L9
+VH;;LU8^V4nQ<L60471IoH2
+!s100 o;jJl2jkZ1gG>jMOYgo_62
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator_TB.vhd|
+Z18 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Signal Generator/Fuentes/Signal_Generator_TB.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+Z19 DEx4 work 19 signal_generator_tb 0 22 H;;LU8^V4nQ<L60471IoH2
+l37
+L12
+Z20 V@z;6OzAn8Aalfm>SYA]Ib3
+Z21 !s100 JGXjQhLY<LWKW93T4FCaD0
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
