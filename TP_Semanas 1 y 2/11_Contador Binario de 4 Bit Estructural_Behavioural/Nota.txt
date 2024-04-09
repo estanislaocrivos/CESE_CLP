@@ -1,0 +1,1 @@
+Se implementó un contador de N bits estructural por comportamiento en el ejercicio 13.
