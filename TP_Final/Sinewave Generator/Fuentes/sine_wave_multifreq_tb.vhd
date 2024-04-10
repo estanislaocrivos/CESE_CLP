@@ -17,8 +17,8 @@ architecture bench of sine_wave_multifreq_tb is
   signal wave_out1, wave_out2, wave_out3: sine_vector_type;
 
   constant clock_period1: time := 10 ns;  -- Frecuencia para la primera sinusoidal
-  constant clock_period2: time := 20 ns;  -- Frecuencia para la segunda sinusoidal
-  constant clock_period3: time := 30 ns;  -- Frecuencia para la tercera sinusoidal
+  constant clock_period2: time := 10 ns;  -- Frecuencia para la segunda sinusoidal
+  constant clock_period3: time := 10 ns;  -- Frecuencia para la tercera sinusoidal
   signal stop_the_clock: boolean;
 
 begin
