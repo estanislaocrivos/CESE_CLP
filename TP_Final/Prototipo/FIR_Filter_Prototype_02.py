@@ -17,8 +17,8 @@ from __future__ import division
 import numpy as np
 import matplotlib.pyplot as plt
 
-from numpy.fft import fft, fftfreq
-from scipy.signal import freqz
+# from numpy.fft import fft, fftfreq
+from scipy import signal
 
 # Use LaTeX font for all text
 plt.rcParams.update({
@@ -73,6 +73,10 @@ def filter_response(f_cutoff, M):
 
 # ---------------------------------------------------------------------------------------------- #
 
+
+
+# ---------------------------------------------------------------------------------------------- #
+
 # COMPUTE FILTER IMPULSE RESPONSE
 
 # ---------------------------------------------------------------------------------------------- #
@@ -89,14 +93,14 @@ h = filter_response(f_cutoff, M)
 # Generate input signal.
 x = input_signal(f, f_sampling, N)
 
+plot_fir_response(h)
+
 # Initialize output signal.
 y = np.zeros_like(x)
 
 for i in range(M, N):
     # Convolve filter with signal.
     y[i] = np.sum(h * x[i-M+1:i+1])
-
-w, H = freqz(h, worN=8000)
 
 # ---------------------------------------------------------------------------------------------- #
 
