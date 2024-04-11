@@ -1,4 +1,4 @@
-{C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_wave_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_wave_tb.vhd}
+{C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -8,7 +8,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity sine_wave_tb
 -- Compiling architecture bench of sine_wave_tb
 
-} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_package.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_package.vhd}
+} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_package.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_package.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,7 +17,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling package body sine_package
 -- Loading package sine_package
 
-} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_wave_cf.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_wave_cf.vhd}
+} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_cf.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_cf.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Compiling configuration cfg_sine_wave_tb
@@ -29,7 +29,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading architecture bench of sine_wave_multifreq_tb
 -- Loading entity sine_wave
 
-} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_wave.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sinewave Generator/Fuentes/sine_wave.vhd}
+} {} {}} {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO

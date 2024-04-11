@@ -1,0 +1,207 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Ccfg_sine_wave_tb
+esine_wave_multifreq_tb
+abench
+Z0 DEx4 work 9 sine_wave 0 22 zKXM?@557RTX>:<XgXC=S3
+DAx4 work 22 sine_wave_multifreq_tb 5 bench 22 ?Xdji`;83o8f[m^>^_?5P3
+Z1 DPx4 work 12 sine_package 0 22 7K3fc0nF3JC@0K9N=aM510
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 DEx4 work 22 sine_wave_multifreq_tb 0 22 cHL[[Ici6f]g@FU2dJ2FP2
+w1712712240
+Z6 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Simulaciones
+8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_cf.vhd
+FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_cf.vhd
+l0
+L4
+VK>3Ckc@?F8?k<oH_S05Fk3
+!s100 o4EI^5NZ;PGLnIGPjO:JH1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1712865891
+!i10b 1
+Z9 !s108 1712865891.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_cf.vhd|
+!s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_cf.vhd|
+!i113 1
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1 CvgOpt 0
+Psine_package
+R3
+R4
+Z12 w1712710012
+R6
+Z13 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_package.vhd
+Z14 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_package.vhd
+l0
+L4
+V7K3fc0nF3JC@0K9N=aM510
+!s100 ICQI:^cj81UmEBdBj>U4O0
+R7
+32
+b1
+R8
+!i10b 1
+R9
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_package.vhd|
+Z16 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_package.vhd|
+!i113 1
+R10
+R11
+Bbody
+R1
+R3
+R4
+l0
+L18
+VLalEo:mV;VzU8HQW9ZDah0
+!s100 WjM@=9ZCA[50B^kW@gL8A2
+R7
+32
+R8
+!i10b 1
+R9
+R15
+R16
+!i113 1
+R10
+R11
+Esine_wave
+R12
+R1
+R2
+R3
+R4
+R6
+Z17 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave.vhd
+Z18 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave.vhd
+l0
+L10
+VzKXM?@557RTX>:<XgXC=S3
+!s100 :T7ji_9VINz4cEg98G?nL2
+R7
+32
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave.vhd|
+Z20 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave.vhd|
+!i113 1
+R10
+R11
+Aarch1
+R1
+R2
+R3
+R4
+R0
+l20
+L15
+VdOKAbMjQ5zabP6P`P3jzk2
+!s100 ?3C0;O9Yif4ZoIcNV3o2O0
+R7
+32
+R8
+!i10b 1
+R9
+R19
+R20
+!i113 1
+R10
+R11
+Esine_wave_multifreq_tb
+Z21 w1712792807
+R1
+R2
+R3
+R4
+R6
+Z22 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_multifreq_tb.vhd
+Z23 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_multifreq_tb.vhd
+l0
+L6
+VcHL[[Ici6f]g@FU2dJ2FP2
+!s100 bnmh=8UaWd3_ISeGGHUze2
+R7
+32
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_multifreq_tb.vhd|
+Z25 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_multifreq_tb.vhd|
+!i113 1
+R10
+R11
+Abench
+R1
+R2
+R3
+R4
+R5
+l29
+L9
+V?Xdji`;83o8f[m^>^_?5P3
+!s100 0YV@nlT;@Z_J_kZbb7R=I2
+R7
+32
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R10
+R11
+Esine_wave_tb
+R12
+R1
+R2
+R3
+R4
+R6
+Z26 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_tb.vhd
+Z27 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_tb.vhd
+l0
+L10
+V4>_:[O7RH1ok`QO:haRTP3
+!s100 B3ZlTZCIP_8XCiEQ_6o]11
+R7
+32
+Z28 !s110 1712865892
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_tb.vhd|
+Z30 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sine Wave Generator/Fuentes/sine_wave_tb.vhd|
+!i113 1
+R10
+R11
+Abench
+R1
+R2
+R3
+R4
+Z31 DEx4 work 12 sine_wave_tb 0 22 4>_:[O7RH1ok`QO:haRTP3
+l26
+L13
+Z32 V:zVEeWA0:Q77KzzR[HSPW3
+Z33 !s100 P9g02kfnG>7]E9Om4VogD2
+R7
+32
+R28
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R10
+R11
