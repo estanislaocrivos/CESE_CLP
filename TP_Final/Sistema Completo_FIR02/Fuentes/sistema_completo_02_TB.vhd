@@ -78,7 +78,7 @@ architecture sistema_completo_02_TB_ARCH of sistema_completo_02_TB is
 
 begin
 	
-	reset_TB <= '0' after 10 us;
+	reset_TB <= '0' after 1 us;
 	
 	clock_process : process
 	begin
