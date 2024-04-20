@@ -8,24 +8,24 @@ use IEEE.NUMERIC_STD.ALL;
 -- Materia: Circuitos Lógicos Programables - CESE CO20 - FI UBA
 
 -- FIR filter entity
-entity FIR_Filter is
+entity FIR_Filter_02 is
     port 
     (
         clock : in  STD_LOGIC;                      -- Input clock signal
         reset : in  STD_LOGIC;                      -- Input reset signal
-        in    : in  unsigned (9 downto 0); -- Input data serial port
-        out   : out unsigned (15 downto 0)  -- Output data serial port
+        filter_input    : in  unsigned (9 downto 0); -- Input data serial port
+        filter_output   : out unsigned (35 downto 0)  -- Output data serial port
     );
-end FIR_Filter;
+end FIR_Filter_02;
 
 -- FIR filter architecture
-architecture behavioural of FIR_Filter is
+architecture behavioural of FIR_Filter_02 is
 
     -- Filter coefficients array
     type coefficients_array is array (0 to 12) of unsigned (15 downto 0); 
 
     -- Shift register array, where shifted samples are stored
-    type shift_array is array (0 to 12) of unsigned (15 downto 0); 
+    type shift_array is array (0 to 12) of unsigned (9 downto 0); 
     
     -- Signals declaration
     signal coefficients : coefficients_array;                -- Filter coefficients
@@ -58,13 +58,13 @@ begin
             else 
                 if count < 13 then 
                     -- Shift samples in the shift register until it is full
-                    shift(count) <= in;
+                    shift(to_integer(count)) <= filter_input;
                     count <= count + 1;
                 else 
                     for i in 12 downto 1 loop
                         shift(i-1) <= shift(i); -- Shift one sample at a time
                     end loop;
-                    shift(12) <= in; -- Fill last position with new sample
+                    shift(12) <= filter_input; -- Fill last position with new sample
                 end if;
             end if;
         end if;
@@ -78,12 +78,16 @@ begin
                 mac_accumulator <= (others => '0'); -- Reset accumulator
                 for j in 0 to 12 loop
                     -- Multiply and accumulate operation
-                    mac_accumulator <= unsigned(mac_accumulator) + to_unsigned(coefficients(j) * shift(j), 26);
-                end loop;
-                for j in 0 to 15 loop
-                    -- Output result
-                    out(j) <= mac_accumulator(20+j)/10110;
-                end loop;
+                    -- mac_accumulator <= unsigned(mac_accumulator) + to_unsigned(coefficients(j) * shift(j), 26);
+                    -- mac_accumulator <= unsigned(mac_accumulator) + unsigned(to_integer(coefficients(j)) * to_integer(shift(j)));
+                    mac_accumulator <= mac_accumulator + to_unsigned(to_integer(coefficients(j)) * to_integer(shift(j)), mac_accumulator'length);
+                    end loop;
+
+                filter_output <= mac_accumulator;
+                -- for j in 0 to 15 loop
+                --     -- Output result
+                --     filter_output(j) <= mac_accumulator(20+j);
+                -- end loop;
             end if;
         end if;
     end process;

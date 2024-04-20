@@ -8,11 +8,11 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use IEEE.math_real.all;   -- se usa para instanciar la ROM
 
-entity nco_multifrequency_TB is
+entity sistema_completo_02_TB is
 
 end;
 
-architecture nco_multifrequency_TB_Architecture of nco_multifrequency_TB is
+architecture sistema_completo_02_TB_ARCH of sistema_completo_02_TB is
 
 	component nco is
 		generic(
@@ -30,29 +30,27 @@ architecture nco_multifrequency_TB_Architecture of nco_multifrequency_TB is
 		);
 	end component;
 
+	component FIR_Filter_02 is
+		port 
+		(
+			clock : in  STD_LOGIC;                      -- Input clock signal
+			reset : in  STD_LOGIC;                      -- Input reset signal
+			filter_input    : in  unsigned (9 downto 0); -- Input data serial port
+			filter_output   : out unsigned (35 downto 0)  -- Output data serial port
+		);
+	end component;
+
+	component FIR_Filter_03 is
+		Port (
+			clk : in STD_LOGIC;
+			reset : in STD_LOGIC;
+			input_data : in UNSIGNED(9 downto 0);
+			output_data : out UNSIGNED(31 downto 0)
+		);
+	end component;
+
 	signal clock_TB : std_logic := '0';
 	signal reset_TB : std_logic := '1';
-
-	-- signal paso1_TB : unsigned(15 downto 0) := "0000000011001100";
-	-- signal paso2_TB : unsigned(15 downto 0) := "0000010110011001";
-	-- signal paso3_TB : unsigned(15 downto 0) := "0000010111000010";
-	-- signal paso4_TB : unsigned(15 downto 0) := "0000010111101011";
-	-- signal paso5_TB : unsigned(15 downto 0) := "0000011000010100";
-	-- signal paso6_TB : unsigned(15 downto 0) := "0000011000111101";
-
-	-- signal paso1_TB : unsigned(7 downto 0) := "11001100";
-	-- signal paso2_TB : unsigned(7 downto 0) := "11001100";
-	-- signal paso3_TB : unsigned(7 downto 0) := "11001100";
-	-- signal paso4_TB : unsigned(7 downto 0) := "11001100";
-	-- signal paso5_TB : unsigned(7 downto 0) := "11001100";
-	-- signal paso6_TB : unsigned(7 downto 0) := "11001100";
-
-	-- signal paso1_TB : unsigned(4 downto 0) := "00100";
-	-- signal paso2_TB : unsigned(4 downto 0) := "11011";
-	-- signal paso3_TB : unsigned(4 downto 0) := "11100";
-	-- signal paso4_TB : unsigned(4 downto 0) := "11101";
-	-- signal paso5_TB : unsigned(4 downto 0) := "11110";
-	-- signal paso6_TB : unsigned(4 downto 0) := "11111";
 
 	signal paso1_TB : unsigned(7 downto 0) := "00011001";
 	signal paso2_TB : unsigned(7 downto 0) := "10110011";
@@ -76,16 +74,26 @@ architecture nco_multifrequency_TB_Architecture of nco_multifrequency_TB is
 	signal salida6_sen_TB : unsigned(9 downto 0);
 
 	signal salida_suma_TB : unsigned(9 downto 0);
+	signal filter_output_TB : unsigned(31 downto 0) := (others => '0');
 
 begin
 	
-	reset_TB <= '0' after 100 ns;
+	reset_TB <= '0' after 10 us;
 	
 	clock_process : process
 	begin
 		wait for 1 us; -- 1MHz de clock
 		clock_TB <= not clock_TB;
 	end process clock_process;
+
+	FILTER: FIR_Filter_03
+		port map
+		(
+			clk => clock_TB,
+			reset => reset_TB,
+			input_data => salida_suma_TB,
+			output_data => filter_output_TB
+		);
 
 	OSC1 : nco
 		generic map

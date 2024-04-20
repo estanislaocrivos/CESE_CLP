@@ -1,4 +1,14 @@
-C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd
+C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Sin_Rom
+-- Compiling architecture Xilinx of Sin_Rom
+
+} {} {}} C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -18,16 +28,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity Acum_Fase
 -- Compiling architecture BEH of Acum_Fase
 
-} {} {}} C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Compiling entity Sin_Rom
--- Compiling architecture Xilinx of Sin_Rom
-
 } {} {}} C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_multifrequency_TB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_multifrequency_TB.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -38,16 +38,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity nco_multifrequency_TB
 -- Compiling architecture nco_multifrequency_TB_Architecture of nco_multifrequency_TB
 
-} {} {}} C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Compiling entity nco_VIO_ILA
--- Compiling architecture p of nco_VIO_ILA
-
 } {} {}} C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_TB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_TB.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -57,6 +47,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package MATH_REAL
 -- Compiling entity nco_TB
 -- Compiling architecture nco_TB_Architecture of nco_TB
+
+} {} {}} C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity nco_VIO_ILA
+-- Compiling architecture p of nco_VIO_ILA
 
 } {} {}} C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_cos.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_cos.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
