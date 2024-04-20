@@ -44,7 +44,7 @@ def input_signal(f, f_sampling, N):
     x = np.cos(2 * np.pi * f * t)
 
     for i in range(5):
-        f_actual = 350000 + (i * 1000)  # Incrementa la frecuencia en pasos de 1000 Hz
+        f_actual = 200000 + (i * 1000)  # Incrementa la frecuencia en pasos de 1000 Hz
         x = x + np.cos(2 * np.pi * f_actual * t)
 
     # Add noise
@@ -91,7 +91,7 @@ def plot_fir_response(h, f_sampling):
     plt.figure()
     plt.subplot(2, 1, 1)
     plt.plot(freq_hz, mag_response_db)
-    plt.title('Filter Magnitude Response', fontsize=12)
+    plt.title('Magnitude Response', fontsize=12)
     plt.ylabel('Magnitude [dB]', fontsize=10)
     plt.xlabel('Frequency [Hz]', fontsize=10)
     plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
@@ -110,21 +110,19 @@ def plot_fir_response(h, f_sampling):
     plt.subplots_adjust(hspace=0.5)
 
     # Save plot as .png file and display it
-    plt.savefig('Plots/P01_Plot_01.png', dpi=300) # Save plot as .png file
+    plt.savefig('Plots/P03_Plot_01.png', dpi=300) # Save plot as .png file
 
     # Grafica la magnitud de la respuesta en frecuencia sola
     plt.figure()
     plt.plot(freq_hz, mag_response_db)
-    plt.title('Filter Magnitude Response', fontsize=12)
+    plt.title('Magnitude Response', fontsize=12)
     plt.ylabel('Magnitude [dB]', fontsize=10)
     plt.xlabel('Frequency [Hz]', fontsize=10)
     plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
-    plt.ylim([-90, 0]) # Set y-axis limits
-    plt.yticks(np.arange(-96, 1, 12)) 
     plt.grid()
 
     # Save plot as .png file and display it
-    plt.savefig('Plots/P01_Plot_02.png', dpi=300) # Save plot as .png file
+    plt.savefig('Plots/P03_Plot_02.png', dpi=300) # Save plot as .png file
  
 # ---------------------------------------------------------------------------------------------- #
 
@@ -159,7 +157,7 @@ def plot_input_output(x,y):
     plt.subplots_adjust(hspace=0.5)
 
     # Save plot as .png file and display it
-    plt.savefig('Plots/P01_Plot_00.png', dpi=300) # Save plot as .png file
+    plt.savefig('Plots/P03_Plot_00.png', dpi=300) # Save plot as .png file
 
 # ---------------------------------------------------------------------------------------------- #
 
@@ -174,8 +172,8 @@ f_sampling = 1000000 # Sampling frequency.
 f_cutoff = 100000 # Cutoff frequency 
 
 # Generate filter coefficients.
-# h = filter_response(f_cutoff/f_sampling, M)
-h = np.array([0, 0, 75, 430, 1200, 2100, 2500, 2100, 1200, 430, 75, 0, 0])
+h = filter_response(f_cutoff/f_sampling, M)
+# h = np.array([0, 0.02, 0.1, 0.23, 0.3, 0.23, 0.1, 0.02, 0])*100
 sum_coefficients = np.sum(h)
 print(h)
 
@@ -189,10 +187,8 @@ for i in range(M, N):
     # Convolve filter with signal.
     y[i] = np.sum(h * x[i-M+1:i+1])
 
-y = y/sum_coefficients
-h = h/10000
-
-print(sum_coefficients)
+# y = y/sum_coefficients
+# h = h/100
 
 plot_input_output(x,y)
 
