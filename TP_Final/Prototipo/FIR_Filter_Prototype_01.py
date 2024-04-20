@@ -41,12 +41,10 @@ def input_signal(f, f_sampling, N):
     t = np.linspace(0, (N-1)/f_sampling, N)
 
     # Signal
-    # x = A*np.sin(2*np.pi*f*t) + A*np.sin(2*np.pi*(3000)*t) + A*np.sin(2*np.pi*(4000)*t) + A*np.sin(2*np.pi*(5000)*t)
-
     x = np.cos(2 * np.pi * f * t)
 
     for i in range(5):
-        f_actual = 350000 + (i * 100)  # Incrementa la frecuencia en pasos de 1000 Hz
+        f_actual = 350000 + (i * 1000)  # Incrementa la frecuencia en pasos de 1000 Hz
         x = x + np.cos(2 * np.pi * f_actual * t)
 
     # Add noise
@@ -64,7 +62,6 @@ def filter_response(f_cutoff, M):
     # N: Filter length, must be odd.
 
     # Compute sinc filter.
-    # h = np.sin(2 * np.pi * f_cutoff * (np.arange(M) - (M - 1) / 2)) / (np.arange(M) - (M - 1) / 2)
     h = np.sinc(2 * f_cutoff * (np.arange(M) - (M - 1) / 2))
 
     # Apply window.
@@ -97,7 +94,7 @@ def plot_fir_response(h, f_sampling):
     plt.title('Magnitude Response', fontsize=12)
     plt.ylabel('Magnitude [dB]', fontsize=10)
     plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 500000]) # Set x-axis limits
+    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
     plt.grid()
 
     # Grafica la fase de la respuesta en frecuencia
@@ -106,7 +103,7 @@ def plot_fir_response(h, f_sampling):
     plt.title('Phase Response', fontsize=12)
     plt.ylabel('Phase [degrees]', fontsize=10)
     plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 500000]) # Set x-axis limits
+    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
     plt.grid()
 
     # Adjust subplots layout
@@ -121,7 +118,7 @@ def plot_fir_response(h, f_sampling):
     plt.title('Magnitude Response', fontsize=12)
     plt.ylabel('Magnitude [dB]', fontsize=10)
     plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 500000]) # Set x-axis limits
+    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
     plt.grid()
 
     # Save plot as .png file and display it
@@ -141,7 +138,7 @@ def plot_input_output(x,y):
     plt.title('Filter\'s Input Signal', fontsize=12)  # Set title and font size
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
     plt.ylabel('Amplitude [V]', fontsize=10)  # Set y-axis label and font size
-    plt.xlim([0, 200]) # Set x-axis limits
+    plt.xlim([0, 400]) # Set x-axis limits
     plt.ylim([-6, 6])  # Set y-axis limits
     plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
@@ -151,7 +148,7 @@ def plot_input_output(x,y):
     plt.title('Filter\'s Output Signal', fontsize=12)  # Set title and font size
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
     plt.ylabel('Amplitude [V]', fontsize=10)  # Set y-axis label and font size
-    plt.xlim([0, 200]) # Set x-axis limits
+    plt.xlim([0, 400]) # Set x-axis limits
     plt.ylim([-6, 6])  # Set y-axis limits
     plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
@@ -169,14 +166,14 @@ def plot_input_output(x,y):
 # ---------------------------------------------------------------------------------------------- #
 
 N = 1001 # Signal length.
-M = 9 # Filter length.
+M = 13 # Filter length.
 f = 50000 # Signal frequency.
 f_sampling = 1000000 # Sampling frequency.
-f_cutoff = 100/f_sampling; # Cutoff frequency as a fraction of the sampling rate.
+f_cutoff = 100000 # Cutoff frequency 
 
 # Generate filter coefficients.
-# h = filter_response(f_cutoff, M)
-h = np.array([0, 0.02, 0.1, 0.23, 0.3, 0.23, 0.1, 0.02, 0])*100
+h = filter_response(f_cutoff/f_sampling, M)
+# h = np.array([0, 0.02, 0.1, 0.23, 0.3, 0.23, 0.1, 0.02, 0])*100
 sum_coefficients = np.sum(h)
 print(h)
 
@@ -190,8 +187,8 @@ for i in range(M, N):
     # Convolve filter with signal.
     y[i] = np.sum(h * x[i-M+1:i+1])
 
-y = y/sum_coefficients
-h = h/100
+# y = y/sum_coefficients
+# h = h/100
 
 plot_input_output(x,y)
 
