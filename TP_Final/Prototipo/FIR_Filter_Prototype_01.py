@@ -43,7 +43,7 @@ def input_signal(f, f_sampling, N):
     # Signal
     x = np.cos(2 * np.pi * f * t)
 
-    for i in range(5):
+    for i in range(10):
         f_actual = 350000 + (i * 1000)  # Incrementa la frecuencia en pasos de 1000 Hz
         x = x + np.cos(2 * np.pi * f_actual * t)
 
@@ -84,26 +84,36 @@ def plot_fir_response(h, f_sampling):
     # Calcula la fase en grados
     phase_response_deg = np.angle(mag_response, deg=True)
 
+    phase_response_rad = np.deg2rad(phase_response_deg)  # Convertir a radianes
+    phase_response_unwrapped_rad = np.unwrap(phase_response_rad)  # Realizar phase unwrap
+    phase_response_unwrapped_deg = np.rad2deg(phase_response_unwrapped_rad)  # Convertir de nuevo a grados
+    # phase_response_wrapped_deg = np.mod(phase_response_unwrapped_deg, 360)  # Realizar phase wrap
+    phase_response_wrapped_deg = np.remainder(phase_response_unwrapped_deg + 180, 360) - 180  # Realizar phase wrap
+
     # Convierte la frecuencia de radianes a Hertz
     freq_hz = w * f_sampling / (2 * np.pi)
 
     # Grafica la magnitud de la respuesta en frecuencia
     plt.figure()
     plt.subplot(2, 1, 1)
-    plt.plot(freq_hz, mag_response_db)
-    plt.title('Filter Magnitude Response', fontsize=12)
+    plt.plot(freq_hz/1000, mag_response_db)
+    plt.title("FIR Filter Prototype's Magnitude Response", fontsize=10)
     plt.ylabel('Magnitude [dB]', fontsize=10)
-    plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
+    plt.xlabel('Frequency [kHz]', fontsize=10)
+    plt.xlim([0, 5*f_cutoff/1000]) # Set x-axis limits
+    plt.ylim([-84, 0]) # Set y-axis limits
+    plt.yticks(np.arange(-84, 1, 12)) # Set y-axis ticks
     plt.grid()
 
     # Grafica la fase de la respuesta en frecuencia
     plt.subplot(2, 1, 2)
-    plt.plot(freq_hz, phase_response_deg)
-    plt.title('Phase Response', fontsize=12)
+    plt.plot(freq_hz/1000, phase_response_wrapped_deg)
+    plt.title("FIR Filter Protoype's Phase Response", fontsize=10)
     plt.ylabel('Phase [degrees]', fontsize=10)
-    plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
+    plt.xlabel('Frequency [kHz]', fontsize=10)
+    plt.xlim([0, 5*f_cutoff/1000]) # Set x-axis limits
+    plt.ylim([-180, 180]) # Set y-axis limits
+    plt.yticks(np.arange(-180, 181, 45)) # Set y-axis ticks
     plt.grid()
 
     # Adjust subplots layout
@@ -114,14 +124,13 @@ def plot_fir_response(h, f_sampling):
 
     # Grafica la magnitud de la respuesta en frecuencia sola
     plt.figure()
-    plt.plot(freq_hz, mag_response_db)
-    plt.title('Filter Magnitude Response', fontsize=12)
+    plt.plot(freq_hz/1000, mag_response_db)
+    plt.title("FIR Filter Prototype's Magnitude Response", fontsize=10)
     plt.ylabel('Magnitude [dB]', fontsize=10)
-    plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
-    plt.ylim([-90, 0]) # Set y-axis limits
-    plt.yticks(np.arange(-96, 1, 12)) 
-    plt.grid()
+    plt.xlabel('Frequency [kHz]', fontsize=10)
+    plt.xlim([0, 5*f_cutoff/1000]) # Set x-axis limits
+    plt.ylim([-84, 0]) # Set y-axis limits
+    plt.yticks(np.arange(-84, 1, 12)) # Set y-axis ticks
 
     # Save plot as .png file and display it
     plt.savefig('Plots/P01_Plot_02.png', dpi=300) # Save plot as .png file
@@ -137,22 +146,22 @@ def plot_input_output(x,y):
     # Plot x and y in two subplots:
     plt.subplot(2, 1, 1)
     plt.plot(np.linspace(0, N, N), x, color='#1f77b4')  # Plot x
-    plt.title('Filter\'s Input Signal', fontsize=12)  # Set title and font size
+    plt.title("FIR Filter Prototype's Input Signal", fontsize=10)
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
-    plt.ylabel('Amplitude [V]', fontsize=10)  # Set y-axis label and font size
-    plt.xlim([0, 400]) # Set x-axis limits
-    plt.ylim([-6, 6])  # Set y-axis limits
-    plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
+    plt.ylabel('Amplitude', fontsize=10)  # Set y-axis label and font size
+    plt.xlim([0,  400]) # Set x-axis limits
+    plt.ylim([-10, 10])  # Set y-axis limits
+    plt.yticks(np.arange(-10, 11, 5))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
 
     plt.subplot(2, 1, 2)
     plt.plot(np.linspace(0, N, N), y, color='#ff7f0e') # Plot y
-    plt.title('Filter\'s Output Signal', fontsize=12)  # Set title and font size
+    plt.title("FIR Filter Prototype's Output Signal", fontsize=10)
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
-    plt.ylabel('Amplitude [V]', fontsize=10)  # Set y-axis label and font size
+    plt.ylabel('Amplitude', fontsize=10)  # Set y-axis label and font size
     plt.xlim([0, 400]) # Set x-axis limits
-    plt.ylim([-6, 6])  # Set y-axis limits
-    plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
+    plt.ylim([-4, 4])  # Set y-axis limits
+    plt.yticks(np.arange(-4, 5, 1))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
 
     # Adjust subplots layout
@@ -174,8 +183,8 @@ f_sampling = 1000000 # Sampling frequency.
 f_cutoff = 100000 # Cutoff frequency 
 
 # Generate filter coefficients.
-# h = filter_response(f_cutoff/f_sampling, M)
-h = np.array([0, 0, 75, 430, 1200, 2100, 2500, 2100, 1200, 430, 75, 0, 0])
+h = filter_response(f_cutoff/f_sampling, M)
+# h = np.array([0, 0, 75, 430, 1200, 2100, 2500, 2100, 1200, 430, 75, 0, 0])
 sum_coefficients = np.sum(h)
 print(h)
 
@@ -189,8 +198,8 @@ for i in range(M, N):
     # Convolve filter with signal.
     y[i] = np.sum(h * x[i-M+1:i+1])
 
-y = y/sum_coefficients
-h = h/10000
+# y = y/sum_coefficients
+# h = h/10000
 
 print(sum_coefficients)
 

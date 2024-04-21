@@ -41,11 +41,13 @@ def input_signal(f, f_sampling, N):
     t = np.linspace(0, (N-1)/f_sampling, N)
 
     # Signal
-    x = np.cos(2 * np.pi * f * t)
+    x = np.cos(2 * np.pi * f * t) 
 
-    for i in range(5):
-        f_actual = 200000 + (i * 1000)  # Incrementa la frecuencia en pasos de 1000 Hz
-        x = x + np.cos(2 * np.pi * f_actual * t)
+    # Add harmonics
+    x = x + np.cos(2 * np.pi * 349610 * t) + np.cos(2 * np.pi * 351563 * t) + np.cos(2 * np.pi * 353516 * t) + np.cos(2 * np.pi * 355469 * t) + np.cos(2 * np.pi * 357422 * t) + np.cos(2 * np.pi * 359375 * t) 
+
+    # Add DC component
+    x = x + 7;
 
     # Add noise
     # x = x + np.random.normal(0, 0.5, N)
@@ -84,45 +86,56 @@ def plot_fir_response(h, f_sampling):
     # Calcula la fase en grados
     phase_response_deg = np.angle(mag_response, deg=True)
 
+    phase_response_rad = np.deg2rad(phase_response_deg)  # Convertir a radianes
+    phase_response_unwrapped_rad = np.unwrap(phase_response_rad)  # Realizar phase unwrap
+    phase_response_unwrapped_deg = np.rad2deg(phase_response_unwrapped_rad)  # Convertir de nuevo a grados
+    # phase_response_wrapped_deg = np.mod(phase_response_unwrapped_deg, 360)  # Realizar phase wrap
+    phase_response_wrapped_deg = np.remainder(phase_response_unwrapped_deg + 180, 360) - 180  # Realizar phase wrap
+
     # Convierte la frecuencia de radianes a Hertz
     freq_hz = w * f_sampling / (2 * np.pi)
 
     # Grafica la magnitud de la respuesta en frecuencia
     plt.figure()
     plt.subplot(2, 1, 1)
-    plt.plot(freq_hz, mag_response_db)
-    plt.title('Magnitude Response', fontsize=12)
+    plt.plot(freq_hz/1000, mag_response_db)
+    plt.title("FIR Filter's Magnitude Response", fontsize=10)
     plt.ylabel('Magnitude [dB]', fontsize=10)
-    plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
+    plt.xlabel('Frequency [kHz]', fontsize=10)
+    plt.xlim([0, 5*f_cutoff/1000]) # Set x-axis limits
+    plt.ylim([-15, 81]) # Set y-axis limits
+    plt.yticks(np.arange(-15, 82, 12)) # Set y-axis ticks
     plt.grid()
 
     # Grafica la fase de la respuesta en frecuencia
     plt.subplot(2, 1, 2)
-    plt.plot(freq_hz, phase_response_deg)
-    plt.title('Phase Response', fontsize=12)
+    plt.plot(freq_hz/1000, phase_response_wrapped_deg)
+    plt.title("FIR Filter's Phase Response", fontsize=10)
     plt.ylabel('Phase [degrees]', fontsize=10)
-    plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
+    plt.xlabel('Frequency [kHz]', fontsize=10)
+    plt.xlim([0, 5*f_cutoff/1000]) # Set x-axis limits
+    plt.ylim([-180, 180]) # Set y-axis limits
+    plt.yticks(np.arange(-180, 181, 45)) # Set y-axis ticks
     plt.grid()
 
     # Adjust subplots layout
     plt.subplots_adjust(hspace=0.5)
 
     # Save plot as .png file and display it
-    plt.savefig('Plots/P03_Plot_01.png', dpi=300) # Save plot as .png file
+    plt.savefig('Plots/P02_Plot_01.png', dpi=300) # Save plot as .png file
 
     # Grafica la magnitud de la respuesta en frecuencia sola
     plt.figure()
-    plt.plot(freq_hz, mag_response_db)
-    plt.title('Magnitude Response', fontsize=12)
+    plt.plot(freq_hz/1000, mag_response_db)
+    plt.title("FIR Filter's Magnitude Response", fontsize=10)
     plt.ylabel('Magnitude [dB]', fontsize=10)
-    plt.xlabel('Frequency [Hz]', fontsize=10)
-    plt.xlim([0, 5*f_cutoff]) # Set x-axis limits
-    plt.grid()
+    plt.xlabel('Frequency [kHz]', fontsize=10)
+    plt.xlim([0, 5*f_cutoff/1000]) # Set x-axis limits
+    plt.ylim([-15, 80]) # Set y-axis limits
+    plt.yticks(np.arange(-15, 82, 12)) # Set y-axis ticks
 
     # Save plot as .png file and display it
-    plt.savefig('Plots/P03_Plot_02.png', dpi=300) # Save plot as .png file
+    plt.savefig('Plots/P02_Plot_02.png', dpi=300) # Save plot as .png file
  
 # ---------------------------------------------------------------------------------------------- #
 
@@ -137,27 +150,27 @@ def plot_input_output(x,y):
     plt.plot(np.linspace(0, N, N), x, color='#1f77b4')  # Plot x
     plt.title('Filter\'s Input Signal', fontsize=12)  # Set title and font size
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
-    plt.ylabel('Amplitude [V]', fontsize=10)  # Set y-axis label and font size
-    plt.xlim([0, 400]) # Set x-axis limits
-    plt.ylim([-6, 6])  # Set y-axis limits
-    plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
+    plt.ylabel('Amplitude', fontsize=10)  # Set y-axis label and font size
+    plt.xlim([14, 400]) # Set x-axis limits
+    # plt.ylim([-6, 6])  # Set y-axis limits
+    # plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
 
     plt.subplot(2, 1, 2)
     plt.plot(np.linspace(0, N, N), y, color='#ff7f0e') # Plot y
     plt.title('Filter\'s Output Signal', fontsize=12)  # Set title and font size
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
-    plt.ylabel('Amplitude [V]', fontsize=10)  # Set y-axis label and font size
-    plt.xlim([0, 400]) # Set x-axis limits
-    plt.ylim([-6, 6])  # Set y-axis limits
-    plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
+    plt.ylabel('Amplitude', fontsize=10)  # Set y-axis label and font size
+    plt.xlim([14, 400]) # Set x-axis limits
+    # plt.ylim([-6, 6])  # Set y-axis limits
+    # plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
 
     # Adjust subplots layout
     plt.subplots_adjust(hspace=0.5)
 
     # Save plot as .png file and display it
-    plt.savefig('Plots/P03_Plot_00.png', dpi=300) # Save plot as .png file
+    plt.savefig('Plots/P02_Plot_00.png', dpi=300) # Save plot as .png file
 
 # ---------------------------------------------------------------------------------------------- #
 
@@ -167,13 +180,12 @@ def plot_input_output(x,y):
 
 N = 1001 # Signal length.
 M = 13 # Filter length.
-f = 50000 # Signal frequency.
+f = 48828 # Signal frequency.
 f_sampling = 1000000 # Sampling frequency.
 f_cutoff = 100000 # Cutoff frequency 
 
 # Generate filter coefficients.
-h = filter_response(f_cutoff/f_sampling, M)
-# h = np.array([0, 0.02, 0.1, 0.23, 0.3, 0.23, 0.1, 0.02, 0])*100
+h = np.array([0, 0, 75, 430, 1200, 2100, 2500, 2100, 1200, 430, 75, 0, 0])
 sum_coefficients = np.sum(h)
 print(h)
 
@@ -187,7 +199,7 @@ for i in range(M, N):
     # Convolve filter with signal.
     y[i] = np.sum(h * x[i-M+1:i+1])
 
-# y = y/sum_coefficients
+y = y/sum_coefficients - 7
 # h = h/100
 
 plot_input_output(x,y)
