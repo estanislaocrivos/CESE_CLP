@@ -44,10 +44,10 @@ def input_signal(f, f_sampling, N):
     x = np.cos(2 * np.pi * f * t) 
 
     # Add harmonics
-    x = x + np.cos(2 * np.pi * 349610 * t) + np.cos(2 * np.pi * 351563 * t) + np.cos(2 * np.pi * 353516 * t) + np.cos(2 * np.pi * 355469 * t) + np.cos(2 * np.pi * 357422 * t) + np.cos(2 * np.pi * 359375 * t) 
+    x = x + np.cos(2 * np.pi * 349610 * t) + np.cos(2 * np.pi * 351563 * t) + np.cos(2 * np.pi * 353516 * t) + np.cos(2 * np.pi * 355469 * t) + np.cos(2 * np.pi * 357422 * t) #+ np.cos(2 * np.pi * 359375 * t) 
 
     # Add DC component
-    x = x + 7;
+    x = x + 6;
 
     # Add noise
     # x = x + np.random.normal(0, 0.5, N)
@@ -148,22 +148,22 @@ def plot_input_output(x,y):
     # Plot x and y in two subplots:
     plt.subplot(2, 1, 1)
     plt.plot(np.linspace(0, N, N), x, color='#1f77b4')  # Plot x
-    plt.title('Filter\'s Input Signal', fontsize=12)  # Set title and font size
+    plt.title('Implemented Filter\'s Input Signal', fontsize=10)  # Set title and font size
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
     plt.ylabel('Amplitude', fontsize=10)  # Set y-axis label and font size
-    plt.xlim([14, 400]) # Set x-axis limits
-    # plt.ylim([-6, 6])  # Set y-axis limits
-    # plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
+    plt.xlim([0, 400]) # Set x-axis limits
+    plt.ylim([0, 12])  # Set y-axis limits
+    plt.yticks(np.arange(0, 13, 3))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
 
     plt.subplot(2, 1, 2)
     plt.plot(np.linspace(0, N, N), y, color='#ff7f0e') # Plot y
-    plt.title('Filter\'s Output Signal', fontsize=12)  # Set title and font size
+    plt.title('Implemented Filter\'s Output Signal', fontsize=10)  # Set title and font size
     plt.xlabel('Samples', fontsize=10)  # Set x-axis label and font size
     plt.ylabel('Amplitude', fontsize=10)  # Set y-axis label and font size
-    plt.xlim([14, 400]) # Set x-axis limits
-    # plt.ylim([-6, 6])  # Set y-axis limits
-    # plt.yticks(np.arange(-6, 6, 2))  # Cambia el paso según tus necesidades
+    plt.xlim([0, 400]) # Set x-axis limits
+    plt.ylim([0, 80000])  # Set y-axis limits
+    plt.yticks(np.arange(0, 80001, 20000))  # Cambia el paso según tus necesidades
     plt.grid() # Enable grid
 
     # Adjust subplots layout
@@ -199,7 +199,7 @@ for i in range(M, N):
     # Convolve filter with signal.
     y[i] = np.sum(h * x[i-M+1:i+1])
 
-y = y/sum_coefficients - 7
+# y = y/sum_coefficients - 7
 # h = h/100
 
 plot_input_output(x,y)
