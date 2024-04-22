@@ -1,0 +1,413 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Sistema Completo_FIR02/Simulaciones
+Eacum_fase
+Z0 w1637266339
+Z1 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Simulaciones
+Z6 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/acum_fase.vhd
+Z7 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/acum_fase.vhd
+l0
+L11
+VS7M[2lT2h8SK_cPh7?9BE2
+!s100 QOLe_ZFWDABGhCI6N9IR:0
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1713824395
+!i10b 1
+Z10 !s108 1713824395.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/acum_fase.vhd|
+Z12 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/acum_fase.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abeh
+R1
+R2
+R3
+R4
+DEx4 work 9 acum_fase 0 22 S7M[2lT2h8SK_cPh7?9BE2
+l30
+L24
+V>QJF_C2]eE^4h1BhL6A5V3
+!s100 X0;jCQ_Y?0`VB?KcWin<[3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efir_filter
+Z15 w1713824362
+R2
+R3
+R4
+R5
+Z16 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter.vhd
+Z17 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter.vhd
+l0
+L10
+V]aijKd3`KCg`E7XEd:WWB1
+!s100 zo6]D;VeW^cRf;YgA[:d83
+R8
+32
+Z18 !s110 1713824394
+!i10b 1
+Z19 !s108 1713824394.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter.vhd|
+Z21 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter.vhd|
+!i113 1
+R13
+R14
+Afir_filter_architecture
+R2
+R3
+R4
+DEx4 work 10 fir_filter 0 22 ]aijKd3`KCg`E7XEd:WWB1
+l51
+L20
+V4@k7mh5LoNUGJXBhf8=K03
+!s100 BdGH0<e]4>Ya^MH0[MCQg3
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 fir_filter 0 22 N^B4@QK@R;8HA5P>15iFU0
+l45
+L14
+Vgzg_lC77@PoS7=0WB<Pk43
+!s100 ^Yf8jM`3DBgZ[jmH21C961
+R8
+32
+!s110 1713822876
+!i10b 1
+!s108 1713822876.000000
+R20
+R21
+!i113 1
+R13
+R14
+w1713822236
+Efir_filter_tb
+Z22 w1713824366
+R1
+R2
+R3
+R4
+R5
+Z23 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter_TB.vhd
+Z24 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter_TB.vhd
+l0
+L11
+VkSEW1<g=zMzmX3:KlkWnB0
+!s100 :IAY0YU1dK1g[HYlNlW4]0
+R8
+32
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter_TB.vhd|
+Z26 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Fuentes/FIR_Filter_TB.vhd|
+!i113 1
+R13
+R14
+Afir_filter_tb_architecture
+R1
+R2
+R3
+R4
+DEx4 work 13 fir_filter_tb 0 22 kSEW1<g=zMzmX3:KlkWnB0
+l68
+L15
+VkLCKifEhOQ15IO@Udagdb2
+!s100 WSbAXV4e1<O>0]2V>71A73
+R8
+32
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 1
+R13
+R14
+Enco
+Z27 w1637266276
+R1
+R2
+R3
+R4
+R5
+Z28 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd
+Z29 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd
+l0
+L11
+V3gjeNN3CMXDIFL0iX<F>90
+!s100 7R:W:f[hbU4Gg2bSlkKR?3
+R8
+32
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd|
+Z31 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco.vhd|
+!i113 1
+R13
+R14
+Ap
+R1
+R2
+R3
+R4
+DEx4 work 3 nco 0 22 3gjeNN3CMXDIFL0iX<F>90
+l59
+L27
+Vlg_af>gShh=RDLffh;_ba1
+!s100 0aY;hZ?=]RQ_lXd>M?AE80
+R8
+32
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Enco_tb
+Z32 w1712890030
+R1
+R2
+R3
+R4
+R5
+Z33 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_TB.vhd
+Z34 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_TB.vhd
+l0
+L11
+VGggni8zcIN<G1MDA<NmVX3
+!s100 7kC4e;oJ[z?FU<9fk?zCb3
+R8
+32
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_TB.vhd|
+Z36 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_TB.vhd|
+!i113 1
+R13
+R14
+Anco_tb_architecture
+R1
+R2
+R3
+R4
+DEx4 work 6 nco_tb 0 22 Gggni8zcIN<G1MDA<NmVX3
+l39
+L15
+V:diT>[WLSjX^Z2AY]Dh3j2
+!s100 4L33NcZal<[cV===C6Wl`3
+R8
+32
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Enco_vio_ila
+Z37 w1637272968
+R1
+R2
+R3
+R4
+R5
+Z38 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd
+Z39 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd
+l0
+L11
+VSR58IN@[G>1N9;:36S3OO3
+!s100 fdAZJCM6@5fhTQlzYSh0S3
+R8
+32
+R9
+!i10b 1
+R10
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd|
+Z41 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/nco_VIO_ILA.vhd|
+!i113 1
+R13
+R14
+Ap
+R1
+R2
+R3
+R4
+DEx4 work 11 nco_vio_ila 0 22 SR58IN@[G>1N9;:36S3OO3
+l54
+L17
+VW<kzRJ_Kf]3nNVbJTOD:k2
+!s100 USjbS`6hiYBC]S@[mD2En2
+R8
+32
+R9
+!i10b 1
+R10
+R40
+R41
+!i113 1
+R13
+R14
+Esin_cos
+Z42 w1426260118
+R2
+R3
+R4
+R5
+Z43 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_cos.vhd
+Z44 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_cos.vhd
+l0
+L5
+VnM_NPn[XH;[EdB1hXVE@D3
+!s100 zgZ58_<9AGLN`MC>BZN`o1
+R8
+32
+R9
+!i10b 1
+R10
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_cos.vhd|
+Z46 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_cos.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+DEx4 work 7 sin_cos 0 22 nM_NPn[XH;[EdB1hXVE@D3
+l43
+L18
+VH2oX;P7CVhlLB:f;c:LTB0
+!s100 gDcCTYO4T9SHizO;JReN23
+R8
+32
+R9
+!i10b 1
+R10
+R45
+R46
+!i113 1
+R13
+R14
+Esin_rom
+Z47 w1354129298
+R1
+R2
+R3
+R4
+R5
+Z48 8C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd
+Z49 FC:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd
+l0
+L11
+VG_0NodMBX9Q4]HboGUh_Z2
+!s100 UdfPYF[H>oXYiS4Jol[Ml3
+R8
+32
+R9
+!i10b 1
+R10
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd|
+Z51 !s107 C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/NCO/Fuentes/sin_rom.vhd|
+!i113 1
+R13
+R14
+Axilinx
+R1
+R2
+R3
+R4
+Z52 DEx4 work 7 sin_rom 0 22 G_0NodMBX9Q4]HboGUh_Z2
+l58
+L25
+Z53 VYM9[TU1DJGf`8j2PeNoSz0
+Z54 !s100 GU?9iBIHmc^<:SjfR54>k2
+R8
+32
+R9
+!i10b 1
+R10
+R50
+R51
+!i113 1
+R13
+R14
+Esistema_completo_02_tb
+Z55 w1713822812
+R1
+R2
+R3
+R4
+R5
+R23
+R24
+l0
+L11
+V>mF[?@nYFzLiJ3RoffoKT0
+!s100 0iRkM^l3O`WaNLBT51>J^3
+R8
+32
+Z56 !s110 1713822823
+!i10b 1
+Z57 !s108 1713822823.000000
+R25
+R26
+!i113 1
+R13
+R14
+Asistema_completo_02_tb_arch
+R1
+R2
+R3
+R4
+DEx4 work 22 sistema_completo_02_tb 0 22 >mF[?@nYFzLiJ3RoffoKT0
+l69
+L15
+VEDm[H]88=f_fJ0dQ6Shfg1
+!s100 `Y9g`RYX65T=dcU7VHkNR1
+R8
+32
+R56
+!i10b 1
+R57
+R25
+R26
+!i113 1
+R13
+R14

@@ -1,19 +1,20 @@
-------------------------------------------------------------------------------
-----                                                                      ----
-----  NCO (Numerically Controlled Oscilator)                              ----
-----                                                                      ----                                                                        ----
-------------------------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use IEEE.math_real.all;   -- se usa para instanciar la ROM
+use IEEE.math_real.all;
 
-entity sistema_completo_02_TB is
+-- Test Bench para el filtro FIR implementado en VHDL 
+-- Autor: Estanislao Crivos
+-- Fecha: Abril 2024
+-- Trabajo Final - Circuitos Lógicos Programables - CESE CO20 - FI UBA
+
+entity FIR_Filter_TB is
 
 end;
 
-architecture sistema_completo_02_TB_ARCH of sistema_completo_02_TB is
+architecture FIR_Filter_TB_Architecture of FIR_Filter_TB is
 
+	-- Call NCO component
 	component nco is
 		generic(
 			DATA_W: natural := 11; 		-- cantidad de bits del dato
@@ -30,17 +31,8 @@ architecture sistema_completo_02_TB_ARCH of sistema_completo_02_TB is
 		);
 	end component;
 
-	component FIR_Filter_02 is
-		port 
-		(
-			clock : in  STD_LOGIC;                      -- Input clock signal
-			reset : in  STD_LOGIC;                      -- Input reset signal
-			filter_input    : in  unsigned (9 downto 0); -- Input data serial port
-			filter_output   : out unsigned (35 downto 0)  -- Output data serial port
-		);
-	end component;
-
-	component FIR_Filter_03 is
+	-- Call FIR_Filter component
+	component FIR_Filter is
 		Port (
 			clk : in STD_LOGIC;
 			reset : in STD_LOGIC;
@@ -49,52 +41,52 @@ architecture sistema_completo_02_TB_ARCH of sistema_completo_02_TB is
 		);
 	end component;
 
+	-- Declare Test Bench signals
 	signal clock_TB : std_logic := '0';
 	signal reset_TB : std_logic := '1';
-
 	signal paso1_TB : unsigned(7 downto 0) := "00011001";
 	signal paso2_TB : unsigned(7 downto 0) := "10110011";
 	signal paso3_TB : unsigned(7 downto 0) := "10110100";
 	signal paso4_TB : unsigned(7 downto 0) := "10110101";
 	signal paso5_TB : unsigned(7 downto 0) := "10110110";
 	signal paso6_TB : unsigned(7 downto 0) := "10111000";
-
 	signal salida1_cos_TB : unsigned(9 downto 0);
 	signal salida2_cos_TB : unsigned(9 downto 0);
 	signal salida3_cos_TB : unsigned(9 downto 0);
 	signal salida4_cos_TB : unsigned(9 downto 0);
 	signal salida5_cos_TB : unsigned(9 downto 0);
 	signal salida6_cos_TB : unsigned(9 downto 0);
-
 	signal salida1_sen_TB : unsigned(9 downto 0);
 	signal salida2_sen_TB : unsigned(9 downto 0);
 	signal salida3_sen_TB : unsigned(9 downto 0);
 	signal salida4_sen_TB : unsigned(9 downto 0);
 	signal salida5_sen_TB : unsigned(9 downto 0);
 	signal salida6_sen_TB : unsigned(9 downto 0);
-
-	signal salida_suma_TB : unsigned(9 downto 0);
+	signal filter_input_TB : unsigned(9 downto 0);
 	signal filter_output_TB : unsigned(31 downto 0) := (others => '0');
 
 begin
 	
 	reset_TB <= '0' after 1 us;
 	
+	-- Clocking process (1MHz clock)
 	clock_process : process
 	begin
-		wait for 1 us; -- 1MHz de clock
+		wait for 0.5 us;
 		clock_TB <= not clock_TB;
 	end process clock_process;
 
-	FILTER: FIR_Filter_03
+	-- Instatiate filter
+	FILTER: FIR_Filter
 		port map
 		(
 			clk => clock_TB,
 			reset => reset_TB,
-			input_data => salida_suma_TB,
+			input_data => filter_input_TB,
 			output_data => filter_output_TB
 		);
 
+	-- Instantiate first oscillator
 	OSC1 : nco
 		generic map
 		(
@@ -112,6 +104,7 @@ begin
 			salida_sen => salida1_sen_TB
 		);
 
+	-- Instantiate second oscillator
 	OSC2 : nco
 		generic map
 		(
@@ -128,7 +121,8 @@ begin
 			salida_cos => salida2_cos_TB,
 			salida_sen => salida2_sen_TB
 		);
-
+		
+	-- Instantiate third oscillator
 	OSC3 : nco
 		generic map
 		(
@@ -146,6 +140,7 @@ begin
 			salida_sen => salida3_sen_TB
 		);
 
+	-- Instantiate fourth oscillator
 	OSC4 : nco
 		generic map
 		(
@@ -163,6 +158,7 @@ begin
 			salida_sen => salida4_sen_TB
 		);
 
+	-- Instantiate fifth oscillator
 	OSC5 : nco
 		generic map
 		(
@@ -180,6 +176,7 @@ begin
 			salida_sen => salida5_sen_TB
 		);
 
+	-- Instantiate sixth oscillator
 	OSC6 : nco
 		generic map
 		(
@@ -197,6 +194,7 @@ begin
 			salida_sen => salida6_sen_TB
 		);
 
-	salida_suma_TB <= unsigned(resize(unsigned(salida1_cos_TB)/6 + unsigned(salida2_cos_TB)/6 + unsigned(salida3_cos_TB)/6 + unsigned(salida4_cos_TB)/6 + unsigned(salida5_cos_TB)/6 + unsigned(salida6_cos_TB)/6, salida_suma_TB'length));
+	-- Output signal (filter's input) is the sum of the six generated signals
+	filter_input_TB <= unsigned(resize(unsigned(salida1_cos_TB)/6 + unsigned(salida2_cos_TB)/6 + unsigned(salida3_cos_TB)/6 + unsigned(salida4_cos_TB)/6 + unsigned(salida5_cos_TB)/6 + unsigned(salida6_cos_TB)/6, filter_input_TB'length));
 	
 end;
