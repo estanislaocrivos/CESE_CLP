@@ -12,8 +12,8 @@ entity FIR_Filter is
 	(
         clk : in STD_LOGIC; 					-- Filter clock input
         reset : in STD_LOGIC; 					-- Filter reset input (0 is operative)
-        input_data : in UNSIGNED(9 downto 0); 	-- Filter serial input
-        output_data : out UNSIGNED(31 downto 0) -- Filter serial output
+        input_data : in UNSIGNED(9 downto 0); 	-- Filter input
+        output_data : out UNSIGNED(31 downto 0) -- Filter output
     );
 end FIR_Filter;
 
@@ -23,7 +23,7 @@ architecture FIR_Filter_Architecture of FIR_Filter is
     type coef_array is array (0 to 12) of UNSIGNED(15 downto 0);
 
     -- Filter coefficients array definition
-    constant coeficientes : coef_array := (
+    constant coefficients : coef_array := (
         to_unsigned(0, 16),
         to_unsigned(0, 16),
         to_unsigned(75, 16),
@@ -70,10 +70,10 @@ begin
             -- Inserts the new sample at the end of the delay line
             delay_line(12) <= input_data;
 
-            -- Calculate the new accumulatorumulator value
+            -- Calculate the new accumulator value
             temp_accumulator := (others => '0');
             for i in 0 to 12 loop
-                temp_accumulator := temp_accumulator + coeficientes(i) * delay_line(i);
+                temp_accumulator := temp_accumulator + coefficients(i) * delay_line(i);
             end loop;
 
             -- Update the accumulator value
