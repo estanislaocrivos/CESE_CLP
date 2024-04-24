@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Apr 24 17:01:43 2024
+# Process ID: 19816
+# Current directory: C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Synthesis/FIR_Filter_Synthesis/FIR_Filter_Synthesis.runs/synth_1
+# Command line: vivado.exe -log FIR_Filter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_Filter.tcl
+# Log file: C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Synthesis/FIR_Filter_Synthesis/FIR_Filter_Synthesis.runs/synth_1/FIR_Filter.vds
+# Journal file: C:/Users/Lenovo/Desktop/CESE/CLP/TP_Final/Synthesis/FIR_Filter_Synthesis/FIR_Filter_Synthesis.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIR_Filter.tcl -notrace
